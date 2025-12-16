@@ -1,0 +1,177 @@
+const matchId = "6935b1c8ea75ad1eeb41fd26";
+
+// India Players
+db.matchplayers.insertMany([
+  {
+    matchId: ObjectId(matchId),
+    name: "Abhishek Sharma",
+    team: "IND",
+    role: "batsman",
+    runs: 35,
+    balls: 18,
+    wickets: 0,
+    overs: 0,
+    isOut: false,
+    battingOrder: 1,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    matchId: ObjectId(matchId),
+    name: "Shubman Gill",
+    team: "IND",
+    role: "batsman",
+    runs: 28,
+    balls: 28,
+    wickets: 0,
+    overs: 0,
+    isOut: false,
+    battingOrder: 2,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    matchId: ObjectId(matchId),
+    name: "Tilak Varma",
+    team: "IND",
+    role: "batsman",
+    runs: 26,
+    balls: 34,
+    wickets: 0,
+    overs: 0,
+    isOut: true,
+    battingOrder: 3,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    matchId: ObjectId(matchId),
+    name: "Corbin Bosch",
+    team: "IND",
+    role: "bowler",
+    runs: 0,
+    balls: 0,
+    wickets: 1,
+    overs: 3,
+    isOut: false,
+    battingOrder: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    matchId: ObjectId(matchId),
+    name: "Lungi Ngidi",
+    team: "IND",
+    role: "bowler",
+    runs: 0,
+    balls: 0,
+    wickets: 1,
+    overs: 3,
+    isOut: false,
+    battingOrder: 10,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    matchId: ObjectId(matchId),
+    name: "Marco Jansen",
+    team: "IND",
+    role: "bowler",
+    runs: 0,
+    balls: 0,
+    wickets: 1,
+    overs: 3,
+    isOut: false,
+    battingOrder: 11,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  // Australia Players
+  {
+    matchId: ObjectId(matchId),
+    name: "Aiden Markram",
+    team: "AUS",
+    role: "batsman",
+    runs: 61,
+    balls: 46,
+    wickets: 0,
+    overs: 0,
+    isOut: false,
+    battingOrder: 1,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    matchId: ObjectId(matchId),
+    name: "Donovan Ferreira",
+    team: "AUS",
+    role: "batsman",
+    runs: 20,
+    balls: 15,
+    wickets: 0,
+    overs: 0,
+    isOut: false,
+    battingOrder: 2,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    matchId: ObjectId(matchId),
+    name: "Anrich Nortje",
+    team: "AUS",
+    role: "batsman",
+    runs: 12,
+    balls: 12,
+    wickets: 0,
+    overs: 0,
+    isOut: false,
+    battingOrder: 3,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    matchId: ObjectId(matchId),
+    name: "Varun Chakaravarthy",
+    team: "AUS",
+    role: "bowler",
+    runs: 0,
+    balls: 0,
+    wickets: 2,
+    overs: 4,
+    isOut: false,
+    battingOrder: 9,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    matchId: ObjectId(matchId),
+    name: "Kuldeep Yadav",
+    team: "AUS",
+    role: "bowler",
+    runs: 0,
+    balls: 0,
+    wickets: 2,
+    overs: 2,
+    isOut: false,
+    battingOrder: 10,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    matchId: ObjectId(matchId),
+    name: "Arshdeep Singh",
+    team: "AUS",
+    role: "bowler",
+    runs: 0,
+    balls: 0,
+    wickets: 2,
+    overs: 4,
+    isOut: false,
+    battingOrder: 11,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  }
+]);
+
+print("✅ Players inserted!");
+print("Total players:", db.matchplayers.countDocuments());
