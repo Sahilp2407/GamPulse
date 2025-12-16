@@ -106,6 +106,7 @@ const LandingPage = () => {
                         <span>Privacy</span>
                         <span>Terms</span>
                         <span>Contact</span>
+                        <span onClick={() => navigate('/admin')} style={{ cursor: 'pointer', color: 'var(--primary-neon)' }}>Admin Login</span>
                     </div>
                     <div className="footer-copy">&copy; 2025 GamePulse Inc.</div>
                 </div>
